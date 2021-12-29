@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      MCA Department
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+<center><img src="assets/logo.jpg" height="60px" width="60px" ></center>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Vision</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    To create a centre of excellence which will produce cutting edge technologists to cater the needs of Business and Society.
+
+
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Mission</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+  <p>  To provide high quality education.  </p>
+   <p> To train the students to excel in cutting edge technologies that make them industry ready.  </p>
+   <p>To inculcate ethical and professional values in students for the betterment of society.  </p>
+   <p>To inculcate entrepreneurial mindset in students in order to make them job creators.  </p>
+    
+  </ion-card-content>
+</ion-card>
+ 
+<ion-fab horizontal="end" vertical="bottom" slot="fixed">
+  <ion-fab-button color="dark">
+    <ion-icon md="add" ios="chevron-up-circle-outline"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button color="light" >
+     <ion-icon name="logo-facebook" (click)="facebook()"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="light">
+      <ion-icon name="logo-twitter" (click)="twitter()"></ion-icon>
+    </ion-fab-button>
+    
+    <ion-fab-button color="light">
+     <ion-icon name="logo-instagram" (click)="instagram()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+
+
+
+</ion-content>

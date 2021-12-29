@@ -1,0 +1,53 @@
+<!-- student-list.page.html -->
+<ion-header>
+  <ion-toolbar color="new" >
+    <ion-title>List All Students</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Address</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of studentsData">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.age }}</td>
+        <td>{{ item.address }}</td>
+        <td style="display: flex">
+          <ion-button color="warning" size="small" routerLink='/student-edit/{{item.id}}'>
+            <ion-icon name="create"></ion-icon>
+          </ion-button>
+          <ion-button color="danger" size="small" (click)="delete(item)">
+            <ion-icon name="trash"></ion-icon>
+          </ion-button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+</ion-card>
+
+<ion-fab vertical="bottom" horizontal="start" slot="fixed">
+  <ion-fab-button [routerLink]="['/student-create']" color="#fffff">
+    <img src="assets/add-contact.png">
+  </ion-fab-button>
+</ion-fab>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button (click)="onClick()" color="new">
+    <ion-icon name="arrow-forward-circle"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+</ion-content>

@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+     
+  </ion-card>
+
+  <ion-item>
+    <ion-label position="floating" >Full Name</ion-label>
+    <ion-input name="username" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" type="email">Email</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" type="number">Contact</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+
+  
+ 
+
+  <ion-item><fieldset class="rating">
+    <legend text-align="center">Rate Us </legend>
+    <input type="radio" id="star5" name="rating" value="5" /><label
+    for="star5" title="Rocks!">5 stars</label>
+    <input type="radio" id="star4" name="rating" value="4" /><label
+    for="star4" title="Pretty good">4 stars</label>
+    <input type="radio" id="star3" name="rating" value="3" /><label
+    for="star3" title="Meh">3 stars</label>
+    <input type="radio" id="star2" name="rating" value="2" /><label
+    for="star2" title="Kinda bad">2 stars</label>
+    <input type="radio" id="star1" name="rating" value="1" /><label
+    for="star1" title="Sucks big time">1 star</label>
+    </fieldset>
+    </ion-item>
+    <div class="container">
+      <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+    </div>
+    
+
+<ion-list>
+  <ion-radio-group value="biff">
+    <ion-list-header>
+      <ion-label>Gender</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Male</ion-label>
+      <ion-radio slot="start" value="biff"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Female</ion-label>
+      <ion-radio slot="start" value="griff"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Other</ion-label>
+      <ion-radio slot="start" value="buford"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-list>
+
+
+  <ion-item>
+    <ion-label>Student of SPIT?</ion-label>
+    <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+  </ion-item>
+
+ 
+  <ion-item>
+    <ion-label position="floating">Any Suggestions?</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+  <ion-label>I hereby confirm that all the data provided by me is accurate</ion-label>
+  <ion-checkbox color="primary"></ion-checkbox>
+  <ion-button expand="block" type="submit" fill="outline" (click)="showToast()" >Submit</ion-button>
+
+</ion-content>

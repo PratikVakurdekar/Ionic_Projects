@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ <center> <ion-card >
+   <img src="assets/logo.jpg" height="100px" width="100px">
+    
+    <br>
+<table>
+  <tr>
+    <td>
+    <ion-icon name="person"></ion-icon></td>
+    <td>
+    <ion-item class="user">
+      <ion-input type="number" placeholder="UCID"></ion-input>
+
+    </ion-item></td>
+  </tr>
+
+  <tr>
+    <td>
+    <ion-icon name="lock-closed"></ion-icon></td>
+    <td>
+    <ion-item class="user">
+      <ion-input type="password" placeholder="Password"></ion-input>
+
+    </ion-item></td>
+  </tr>
+
+</table>
+<br>
+<br>
+<ion-button size="Large" (click)="home()" >Login</ion-button>
+  </ion-card></center>
+
+</ion-content>

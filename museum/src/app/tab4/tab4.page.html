@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+     
+  </ion-card>
+
+  <ion-item>
+    <ion-label position="floating" >Full Name</ion-label>
+    <ion-input name="username" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" type="email">Email</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" type="number">Contact</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+
+  
+  <ion-item>
+   
+    <ion-range min="0" max="10" pin color="secondary">
+      <ion-icon  slot="start" name="sad-outline"></ion-icon>
+      <ion-icon slot="end" name="happy-outline"></ion-icon>
+    </ion-range>
+  </ion-item>
+
+  <ion-list>
+    <ion-radio-group value="biff">
+      <ion-list-header>
+        <ion-label>Gender</ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Male</ion-label>
+        <ion-radio slot="start" value="biff"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Female</ion-label>
+        <ion-radio slot="start" value="griff"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Other</ion-label>
+        <ion-radio slot="start" value="buford"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-item>
+    <ion-label position="floating">Any Suggestions?</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+ <ion-label>I here by confirm the review given by me is honest</ion-label> <br>
+ <ion-checkbox color="primary"></ion-checkbox>
+  <ion-button expand="block" type="submit" fill="outline" (click)="showToast()" >Submit</ion-button>
+   
+</ion-content>

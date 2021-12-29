@@ -1,0 +1,96 @@
+<ion-app>
+  <ion-menu side="start" menuId="menu-content" contentId="menu-content" class="my-custom-menu">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Sardar Patel Institute of Technology</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+
+      <ion-list>
+        <ion-menu-toggle menu="menu-content">
+          <ion-item (click)="info()">
+            <ion-icon name="information-circle-outline" color="secondary"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle menu="menu-content">
+          <ion-item [routerLink]="['/pages/profile']">
+            <ion-icon name="person"  color="primary"></ion-icon>
+            <ion-label>Profile</ion-label>
+          </ion-item>          
+        </ion-menu-toggle>
+        <ion-menu-toggle menu="menu-content">
+          <ion-item [routerLink]="['/pages/timetable']">
+            <ion-icon name="document-text-outline"  color="secondary"></ion-icon>
+            <ion-label>Time-Table</ion-label>
+          </ion-item>          
+        </ion-menu-toggle>
+
+        <ion-menu-toggle menu="menu-content">
+          <ion-item [routerLink]="['/pages/vision']">
+            <ion-icon name="bar-chart" color="success"></ion-icon>
+            <ion-label>Placement</ion-label>
+          </ion-item>          
+        </ion-menu-toggle>
+
+        <ion-menu-toggle menu="menu-content">
+          <ion-item [routerLink]="['/pages/moodle']">
+            <ion-icon name="notifications-outline"  color="warning"></ion-icon>
+            <ion-label>Moodle</ion-label>
+          </ion-item>          
+        </ion-menu-toggle>
+        <ion-menu-toggle menu="menu-content">
+          <ion-item (click)="library()">
+            <ion-icon name="people-outline"  color="primary"></ion-icon>
+            <ion-label>Library</ion-label>
+          </ion-item>          
+        </ion-menu-toggle>
+        <ion-menu-toggle menu="menu-content">
+          <ion-item [routerLink]="['/pages/meet-links']">
+            <ion-icon name="link-outline"  color="success"></ion-icon>
+            <ion-label>Meet Links</ion-label>
+          </ion-item>          
+        </ion-menu-toggle>
+        <ion-menu-toggle menu="menu-content">
+          <ion-item [routerLink]="['/login']">
+            <ion-icon name="log-out"  color="secondary"></ion-icon>
+            <ion-label>Logout</ion-label>
+          </ion-item>          
+        </ion-menu-toggle>
+
+
+        
+      </ion-list>
+      
+        
+    
+
+      
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="menu-content"></ion-router-outlet>
+
+  
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="tab1" [routerLink]="['/home']">
+      <ion-icon name="information-circle" color="secondary"></ion-icon>
+      <ion-label>Vision</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="tab2" [routerLink]="['/events']" >
+      <ion-icon name="calendar"  color="warning"></ion-icon>
+      <ion-label>Events</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="tab3" [routerLink]="['/contactus']" >    
+      <ion-icon name="call"  color="success"></ion-icon>
+      <ion-label>Contact US</ion-label>
+    </ion-tab-button>
+    
+    
+    </ion-tab-bar>
+</ion-tabs>
+
+</ion-app>

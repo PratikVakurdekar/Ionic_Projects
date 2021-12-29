@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <center>
+<table>
+  <tr>
+    <td><img src="assets/lessons.png"></td>
+    <td><img src="assets/371516916.jpg"></td>
+  </tr>
+  <tr>
+    <td>
+      <center>
+      <ion-button (click)="lessons()">
+        <ion-label>Lessons</ion-label>
+      </ion-button></center>
+    </td>
+    <td>
+      <center>
+      <ion-button (click)="practice()">
+        <ion-label>Practice</ion-label>
+      </ion-button></center>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="assets/leaderboard.png" height="150px" width="150px"></td>
+    <td><img src="assets/profile.png"></td>
+  </tr>
+  <tr>
+    <td>
+      <center>
+      <ion-button (click)="leaderboard()">
+        <ion-label>Leader-Board</ion-label>
+      </ion-button></center>
+    </td>
+    <td>
+      <center>
+      <ion-button (click)="profile()">
+        <ion-label>Profile</ion-label>
+      </ion-button></center>
+    </td>
+  </tr>
+</table>
+</center>
+</ion-content>
+

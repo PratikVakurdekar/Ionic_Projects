@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      
+      <img src="assets/main.png" height="40px">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+   
+    <ion-item>
+      <ion-button expand="full" fill="transparent" (click)="international()">International</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button expand="full" fill="transparent" (click)="camping()">Camping</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button expand="block" fill="transparent" (click)="bike()">Bike Ride</ion-button>
+    </ion-item>
+    
+  </ion-list>
+
+
+</ion-content>

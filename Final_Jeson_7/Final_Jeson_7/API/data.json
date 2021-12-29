@@ -1,0 +1,16 @@
+{
+  "students": [
+    {
+      "id": 0,
+      "name": "Juana Ziemann",
+      "age": "16",
+      "address": "612 Dayana Stream"
+    },
+    {
+      "name": "Pratik",
+      "age": "22",
+      "address": "Kalyan",
+      "id": 1
+    }
+  ]
+}

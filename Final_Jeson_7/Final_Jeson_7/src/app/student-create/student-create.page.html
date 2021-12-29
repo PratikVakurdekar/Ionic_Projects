@@ -1,0 +1,34 @@
+
+
+<ion-content class="ion-padding">
+ 
+  
+    <h1>  Add New Student     </h1>
+
+ <br>
+ <br>
+ <br>
+  <ion-card>
+   
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input [(ngModel)]="data.name" placeholder="Enter Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Age</ion-label>
+    <ion-input [(ngModel)]="data.age" placeholder="Enter Age"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Address</ion-label>
+    <ion-input [(ngModel)]="data.address" placeholder="Enter Address"></ion-input>
+  </ion-item>
+
+  
+    <ion-button expand="full" color="success" (click)="submitForm()">Add
+    </ion-button>
+  
+</ion-card>
+
+</ion-content> 
